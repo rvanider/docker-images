@@ -6,5 +6,5 @@ fi
 IMAGE=martin/docker-cleanup-volumes
 SOCKPATH=/var/run/docker.sock
 DOCKERPATH=/var/lib/docker
-docker run -v $SOCKPATH:$SOCKPATH -v $DOCKERPATH:$DOCKERPATH --rm $IMAGE
+docker run -v $SOCKPATH:$SOCKPATH -v $DOCKERPATH:$DOCKERPATH --rm $IMAGE $OPTS
 
