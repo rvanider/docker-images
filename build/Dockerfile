@@ -5,6 +5,6 @@ RUN wget -O /etc/yum.repos.d/public-yum-ol6.repo http://public-yum.oracle.com/pu
             scl-utils \
             devtoolset-3-gcc devtoolset-3-gcc-c++ \
             maven30 \
-            git19 && \
+            git && \
     yum -y clean all && \
     rm -rf /var/cache/yum/*
