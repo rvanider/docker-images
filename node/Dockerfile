@@ -7,4 +7,6 @@ RUN cd /opt && \
     ln -s node-v4.2.2-linux-x64 node && \
     export PATH=/opt/node/bin:$PATH && \
     npm -g upgrade npm && \
+    npm -g install nodemon && \
+    npm -g install bunyan && \
     echo 'export PATH=/opt/node/bin:$PATH' > /etc/profile.d/node.sh
