@@ -9,5 +9,5 @@ RUN yum -y update && \
             gcc make g++ build-essential libc6-dev tcl && \
     yum -y clean all && \
     rm -rf /var/cache/yum/* && \
-    wget -q -O /usr/local/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 &&
+    wget -q -O /usr/local/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 && \
     chmod +x /usr/local/bin/jq
