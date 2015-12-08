@@ -2,3 +2,4 @@
 
 Docker image based on official Oracle Enterprise Linux image.
 
+Standard additional packages and JQ for JSON command line tools
