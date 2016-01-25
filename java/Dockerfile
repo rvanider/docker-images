@@ -1,4 +1,4 @@
-FROM ryanv/oel67:latest
+FROM ryanv/oel67vc:latest
 
 RUN yum -y install java-1.8.0 && \
     yum -y clean all && \

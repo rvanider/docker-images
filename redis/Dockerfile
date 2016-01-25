@@ -1,4 +1,4 @@
-FROM ryanv/oel67:latest
+FROM ryanv/oel67vc:latest
 
 RUN wget -q http://download.redis.io/redis-stable.tar.gz -O - | tar -xvz && \
     (cd /redis-stable && make) && \
