@@ -16,6 +16,8 @@ RUN cd /opt && \
 ADD tomcat-users.xml /opt/tomcat/conf/tomcat-users.xml
 ADD tomcat.sh /etc/profile.d/tomcat.sh
 
+EXPOSE 8080
+
 USER tomcat
 
 ENTRYPOINT ["/opt/tomcat/bin/catalina.sh", "run"]
