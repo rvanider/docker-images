@@ -1,7 +1,7 @@
 FROM ryanv/java:latest
 
 ENV MAJOR=8
-ENV VERSION=8.0.30
+ENV VERSION=8.0.32
 ENV URL=https://www.apache.org/dist/tomcat/tomcat-$MAJOR/v$VERSION/bin/apache-tomcat-$VERSION.tar.gz
 
 RUN cd /opt && \
