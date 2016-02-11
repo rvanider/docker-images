@@ -1,6 +1,6 @@
 FROM ryanv/java:latest
 
-ENV VERSION=5.13.0
+ENV VERSION=5.13.1
 
 RUN cd /opt && \
     wget -q http://www.us.apache.org/dist/activemq/${VERSION}/apache-activemq-${VERSION}-bin.tar.gz && \
