@@ -1,10 +1,12 @@
 FROM ryanv/java:latest
 
+ENV VERSION=4.3.0
+
 RUN cd /opt && \
-    wget -q https://nodejs.org/dist/v4.2.6/node-v4.2.6-linux-x64.tar.xz && \
-    tar xf node-v4.2.6-linux-x64.tar.xz && \
-    rm node-v4.2.6-linux-x64.tar.xz && \
-    ln -s node-v4.2.6-linux-x64 node && \
+    wget -q https://nodejs.org/dist/v${VERSION}/node-v${VERSION}-linux-x64.tar.xz && \
+    tar xf node-v${VERSION}-linux-x64.tar.xz && \
+    rm node-v${VERSION}-linux-x64.tar.xz && \
+    ln -s node-v${VERSION}-linux-x64 node && \
     export PATH=/opt/node/bin:$PATH && \
     npm -g upgrade npm && \
     npm -g install nodemon && \
