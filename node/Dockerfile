@@ -1,6 +1,6 @@
 FROM ryanv/java:latest
 
-ENV VERSION=4.3.1
+ENV VERSION=4.3.2
 
 RUN cd /opt && \
     wget -q https://nodejs.org/dist/v${VERSION}/node-v${VERSION}-linux-x64.tar.xz && \
